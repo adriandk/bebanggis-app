@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#3b0055</color>
+    <color name="colorNavbar">#D8D8D8</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorDonate">#edd100</color>
+    <color name="colorunClicked">#CB00FF</color>
+    <color name="colorClicked">#30FF00</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="kuning">#FFDB5A</color>
+    <color name="biru">#497CFF</color>
+    <color name="merah">#FF4949</color>
+    <color name="hitam">#2C2C2C</color>
+    <color name="putih">#EDEDED</color>
+    <color name="abuabu">#747474</color>
+    <color name="putihkotor">#9A9A9A</color>
+
+    <color name="hijau">#00FF37</color>
+    <color name="hijautua">#005112</color>
+    <color name="hijaumuda">#72FF90</color>
+
+    <color name="orange">#FFB447</color>
+    <color name="orangemuda">#ffd394</color>
+    <color name="orangetua">#fa9400</color>
+
+    <color name="ungu">#6a44b2</color>
+    <color name="ungumuda">#9477cb</color>
+    <color name="ungutua">#54368d</color>
+
+    <color name="birumuda">#638eff</color>
+    <color name="birutua">#0046fc</color>
+
+    <color name="merahmuda">#ff6363</color>
+    <color name="merahtua">#ff1616</color>
+
+    <color name="kuningtua">#ffca0e</color>
+    <color name="kuningmuda">#ffeca7</color>
+
+    <color name="green">#004302</color>
+    <color name="red">#500000</color>
+    <color name="blue">#000D55</color>
+    <color name="yellow">#4C4000</color>
+
+    <color name="git">#ececec</color>
+    <color name="be">#e3eafe</color>
+    <color name="ig">#f3e3fe</color>
+
+    <color name="textgreen">#60e3b9</color>
+</resources>

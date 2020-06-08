@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="250dp"
+        android:layout_height="380dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="68dp"
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anda belum selesai mengerjakan quiz ini, apakah anda ingin keluar?"
+                android:fontFamily="@font/berlinlight"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"/>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_below="@id/icon"
+                android:id="@+id/button_ya"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Ya, kembali"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonpurple"
+                android:fontFamily="@font/berlinlight"
+                android:textSize="24sp"/>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/button_tidak"
+                android:layout_below="@id/button_ya"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="tidak"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonsoundwarna"
+                android:fontFamily="@font/berlinlight"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="134dp"
+        android:background="@drawable/buttonpurple"
+        android:clickable="false"
+        android:fontFamily="@font/berlinlight"
+        android:text="peringatan"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:elevation="@dimen/cardview_default_elevation"
+        android:id="@+id/button_x"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/buttonforexitpopup"
+        android:src="@drawable/closepopup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

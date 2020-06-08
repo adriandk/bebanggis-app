@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamesColor">
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/arrowbackbutton"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/berlinsans"
+        android:text="Games Warna"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonback"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/helpbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/namawarnaing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/berlinsans"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/namawarnaindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berlinsans"
+        android:gravity="center"
+        android:textColor="@color/textgreen"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/namawarnaing"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bgwarna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/soundon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/buttonsoundwarna"
+        android:elevation="5dp"
+        android:src="@drawable/soundpurple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="74dp"
+        android:background="@drawable/buttonsoundwarna"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namawarnaindo"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/warnabesar"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:elevation="-10dp"
+                android:background="@drawable/buttonmixcolor" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/berlinlight"
+                android:gravity="center"
+                android:text="warna anda :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp">
+
+                <Button
+                    android:id="@+id/dua"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/buttonmixcolor"
+                    android:text="DUA"
+                    android:textSize="0sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_toStartOf="@id/dua"
+                    android:id="@+id/satu"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="SATU"
+                    android:textSize="0sp"
+                    android:background="@drawable/buttonmixcolor"/>
+
+                <Button
+                    android:id="@+id/tiga"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/buttonmixcolor"
+                    android:text="TIGA"
+                    android:textSize="0sp"
+                    android:layout_toEndOf="@id/dua"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/mix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttonred"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"
+                android:fontFamily="@font/berlinlight"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:text="campurkan" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/kuning"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_toStartOf="@id/biru"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/kuning" />
+
+            <ImageView
+                android:id="@+id/biru"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_toStartOf="@id/merah"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/biru" />
+
+            <ImageView
+                android:id="@+id/merah"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/merah" />
+
+            <ImageView
+                android:id="@+id/hitam"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_toEndOf="@id/merah"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/hitam" />
+
+            <ImageView
+                android:id="@+id/putih"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_toEndOf="@id/hitam"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/putih" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

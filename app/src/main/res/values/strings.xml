@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bebanggis</string>
+    <string name="belajar_seru">Belajar seru dengan aplikasi!</string>
+    <string name="bebanggis_developer">Developers</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="belikan_kami_secangkir_kopi">Belikan kami secangkir kopi!</string>
+    <string name="donasi">berikan donasi</string>
+    <string name="pencet_tombol_untuk_memulai_belajar_dan_games">Pencet Tombol untuk memulai belajar dan games</string>
+    <string name="binatang">Binatang</string>
+    <string name="profile">profil</string>
+    <string name="klik_tombol_yang_ada_untuk_memulai_belajar_bermain_games_dan_lainnya">Pencet tombol yang ada untuk memulai belajar, bermain games dan lainnya</string>
+    <string name="belajar_alfabet">Belajar Alfabet</string>
+    <string name="belajar_warna">Belajar Warna</string>
+
+</resources>

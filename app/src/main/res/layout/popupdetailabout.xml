@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="290dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/namadev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="134dp"
+                android:fontFamily="@font/berlinlight"
+                android:gravity="center"
+                android:text="Shaddam Amru Hasbiuan"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/profesidev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namadev"
+                android:layout_marginTop="-4dp"
+                android:fontFamily="@font/berlinsans"
+                android:gravity="center"
+                android:text="Programmer"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/tempatkerja"
+                android:layout_below="@+id/profesidev"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/kerja1"
+                    android:layout_toStartOf="@id/kerja2"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/circlelinkedin"
+                    android:text="in"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+
+                <ImageButton
+                    android:id="@+id/kerja2"
+                    android:layout_toStartOf="@id/center"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/circlelinkedin"
+                    android:backgroundTint="@color/be"
+                    android:src="@mipmap/behance"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/center"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerInParent="true"/>
+
+                <ImageButton
+                    android:layout_toEndOf="@id/center"
+                    android:id="@+id/kerja3"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/circlelinkedin"
+                    android:backgroundTint="@color/git"
+                    android:src="@mipmap/github"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+
+                <ImageButton
+                    android:id="@+id/kerja4"
+                    android:layout_toEndOf="@id/kerja3"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/circlelinkedin"
+                    android:backgroundTint="@color/ig"
+                    android:src="@mipmap/instagram"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+
+            <TextView
+                android:paddingRight="28dp"
+                android:paddingLeft="28dp"
+                android:id="@+id/descdev"
+                android:fontFamily="@font/berlinlight"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempatkerja"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Saya adalah seorang desainer asal kota kecil Cimahi yang tertarik untuk belajar dan meng-explore hal baru demi meningkatkan skill saya"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/kontak"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_centerHorizontal="true"
+                android:text="kontak"
+                android:fontFamily="@font/berlinlight"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="26sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonred"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/descdev"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:elevation="@dimen/cardview_default_radius"
+        android:id="@+id/devphoto"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="334dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:elevation="@dimen/cardview_default_elevation"
+        android:id="@+id/exit_button_popup"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="427dp"
+        android:background="@drawable/buttonforexitpopup"
+        android:src="@drawable/closepopup"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgabout"
+        android:padding="16dp"
+        tools:context=".ActivityAbout">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/arrowbackbutton"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/berlinsans"
+            android:gravity="center_vertical"
+            android:text="@string/bebanggis_developer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_back"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="34dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/gambarnya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="18dp"
+                            android:src="@drawable/potoaing" />
+
+                        <TextView
+                            android:id="@+id/namadev1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gambarnya"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/berlinlight"
+                            android:gravity="center"
+                            android:text="Shaddam A. H"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/descabout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/namadev1"
+                            android:fontFamily="@font/berlinlight"
+                            android:gravity="center"
+                            android:text="sebagai"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/descabout"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/berlinsans"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Designer"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/profilesadam"
+                    android:layout_width="118dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/cardView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-38dp"
+                    android:background="@drawable/buttonred"
+                    android:fontFamily="@font/berlinlight"
+                    android:text="@string/profile"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="1.0" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="34dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/gambarnya2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="18dp"
+                            android:src="@drawable/adrian" />
+
+                        <TextView
+                            android:id="@+id/namadev2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gambarnya2"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/berlinlight"
+                            android:gravity="center"
+                            android:text="Adrian DeKa"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/descabout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/namadev2"
+                            android:fontFamily="@font/berlinlight"
+                            android:gravity="center"
+                            android:text="sebagai"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/design2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/descabout2"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginBottom="42dp"
+                            android:fontFamily="@font/berlinsans"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Programmer"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/profiledeka"
+                    android:layout_width="118dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/cardView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-38dp"
+                    android:background="@drawable/buttonred"
+                    android:fontFamily="@font/berlinlight"
+                    android:text="@string/profile"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/berlinsans"
+            android:text="@string/belikan_kami_secangkir_kopi"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/donate"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonorange"
+            android:fontFamily="@font/berlinlight"
+            android:stateListAnimator="@null"
+            android:text="@string/donasi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
