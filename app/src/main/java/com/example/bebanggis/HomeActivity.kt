@@ -26,26 +26,6 @@ class HomeActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-//
-//        player = MediaPlayer.create(this, R.raw.music)
-//        player.isLooping = true
-//        player.setVolume(20F, 20F)
-//        Handler().postDelayed({
-//            player.start()
-//        }, 500)
-//
-//        volume.setOnClickListener {
-//            if (volume.text == "0"){
-//                volume.setBackgroundResource(R.drawable.volon)
-//                player.pause()
-//                volume.text = "1"
-//            }
-//            else if (volume.text == "1"){
-//                volume.setBackgroundResource(R.drawable.voloff)
-//                player.start()
-//                volume.text = "0"
-//            }
-//        }
 
         epicDialog = Dialog(this)
 

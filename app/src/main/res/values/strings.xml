@@ -12,5 +12,7 @@
     <string name="klik_tombol_yang_ada_untuk_memulai_belajar_bermain_games_dan_lainnya">Pencet tombol yang ada untuk memulai belajar, bermain games dan lainnya</string>
     <string name="belajar_alfabet">Belajar Alfabet</string>
     <string name="belajar_warna">Belajar Warna</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
