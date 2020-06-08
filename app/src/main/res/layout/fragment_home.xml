@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".fragment.Home">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        tools:context=".fragment.Home">
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -111,7 +111,7 @@
                 android:src="@drawable/gamesbutton" />
 
             <ImageView
-                android:id="@+id/buttonabout"
+                android:id="@+id/button_about"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

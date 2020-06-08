@@ -11,11 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ActivityAbout"
+        <activity android:name=".FragmentActivity"></activity>
+        <activity
+            android:name=".ActivityAbout"
             android:screenOrientation="nosensor" />
-        <activity android:name=".Result"
+        <activity
+            android:name=".Result"
             android:screenOrientation="nosensor" />
-        <activity android:name=".Quiz"
+        <activity
+            android:name=".Quiz"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".GamesColor"

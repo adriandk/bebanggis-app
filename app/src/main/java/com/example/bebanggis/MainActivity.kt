@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed({
             val player = MediaPlayer.create(this, R.raw.splash2)
             player.start()
-            val pindah = Intent(this@MainActivity, HomeActivity::class.java)
+            val pindah = Intent(this@MainActivity, FragmentActivity::class.java)
             startActivity(pindah)
             overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             finish()
