@@ -26,21 +26,21 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <!--        <Button-->
-        <!--            android:id="@+id/volume"-->
-        <!--            android:layout_width="34dp"-->
-        <!--            android:layout_height="34dp"-->
-        <!--            android:layout_marginTop="13dp"-->
-        <!--            android:layout_marginEnd="8dp"-->
-        <!--            android:background="@drawable/voloff"-->
-        <!--            android:text="0"-->
-        <!--            android:textSize="0dp"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/textView2"-->
-        <!--            app:layout_constraintEnd_toStartOf="@+id/button_help"-->
-        <!--            app:layout_constraintHorizontal_bias="1.0"-->
-        <!--            app:layout_constraintStart_toEndOf="@+id/imageView4"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:layout_constraintVertical_bias="0.0" />-->
+        <Button
+            android:id="@+id/volume"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/voloff"
+            android:text="0"
+            android:textSize="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/button_help"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/button_help"
