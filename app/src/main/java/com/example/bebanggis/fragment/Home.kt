@@ -57,6 +57,7 @@ class Home : Fragment() {
 
             btnLearnXGames2 = epicDialog.findViewById(R.id.button_mixcolor)
             btnLearnXGames2.setOnClickListener(
+
                 Navigation.createNavigateOnClickListener(R.id.action_home2_to_gamesColor)
             )
 

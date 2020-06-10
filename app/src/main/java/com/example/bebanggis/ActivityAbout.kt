@@ -149,39 +149,6 @@ class ActivityAbout : AppCompatActivity() {
             }
             else -> {
                 devPhoto.setImageResource(R.drawable.adrian)
-//                buttonkerja1.setOnClickListener {
-//                    val kerja = Intent(Intent.ACTION_VIEW)
-//                    kerja.data = Uri.parse(link1)
-//                    startActivity(kerja)
-//                }
-//                buttonkerja2.setOnClickListener {
-//                    val kerja = Intent(Intent.ACTION_VIEW)
-//                    kerja.data = Uri.parse(link2)
-//                    startActivity(kerja)
-//                }
-//                buttonkerja3.setOnClickListener {
-//                    val kerja = Intent(Intent.ACTION_VIEW)
-//                    kerja.data = Uri.parse(link3)
-//                    startActivity(kerja)
-//                }
-//                buttonkerja4.setOnClickListener {
-//                    val kerja = Intent(Intent.ACTION_VIEW)
-//                    kerja.data = Uri.parse(link4)
-//                    startActivity(kerja)
-//                }
-//                buttonkontak.setOnClickListener {
-//                    val i = Intent(Intent.ACTION_SENDTO)
-//                    i.data = Uri.parse("mailto:$kontak")
-//                    try {
-//                        startActivity(i)
-//                    } catch (ex: ActivityNotFoundException) {
-//                        Toast.makeText(
-//                            this,
-//                            "There are no email clients installed.",
-//                            Toast.LENGTH_SHORT
-//                        ).show()
-//                    }
-//                }
             }
         }
 
