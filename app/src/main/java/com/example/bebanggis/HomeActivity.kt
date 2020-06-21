@@ -11,6 +11,7 @@ import android.os.Handler
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Lifecycle
 import kotlinx.android.synthetic.main.activity_home.*
@@ -20,8 +21,8 @@ class HomeActivity : AppCompatActivity(){
     private lateinit var epicDialog : Dialog
     private lateinit var btnxPopUP : ImageButton
     private lateinit var btnLearnXGames : Button
-    private lateinit var btnLearnXGames2 : Button
-    private lateinit var player: MediaPlayer
+    private lateinit var btnLearnXGames2: Button
+    private lateinit var helptext: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,7 +65,11 @@ class HomeActivity : AppCompatActivity(){
 
         button_help.setOnClickListener {
             epicDialog.setContentView(R.layout.helpdialog)
-            btnxPopUP= epicDialog.findViewById(R.id.button_xhelp)
+            btnxPopUP = epicDialog.findViewById(R.id.button_xhelp)
+            helptext = epicDialog.findViewById(R.id.help)
+
+            helptext.text = "Pilih salah satu tombol untuk belajar atau bermain!"
+
             btnxPopUP.setOnClickListener {
                 epicDialog.dismiss()
             }
