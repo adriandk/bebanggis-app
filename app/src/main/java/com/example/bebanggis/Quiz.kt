@@ -69,6 +69,7 @@ class Quiz : AppCompatActivity() {
         "Blue & Red", "Red & Black", "White & Blue", "Red & White",
         "Kucing", "Lumba - lumba", "Jerapah", "Gajah"
     )
+
     var flag = 0
     var marks : Int = 0
     var correct : Int = 0
