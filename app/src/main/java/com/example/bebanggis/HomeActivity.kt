@@ -68,7 +68,7 @@ class HomeActivity : AppCompatActivity(){
             btnxPopUP = epicDialog.findViewById(R.id.button_xhelp)
             helptext = epicDialog.findViewById(R.id.help)
 
-            helptext.text = "Pilih salah satu tombol untuk belajar atau bermain!"
+            helptext.text = "Pilih salah satu tombol untuk belajar atau bermain"
 
             btnxPopUP.setOnClickListener {
                 epicDialog.dismiss()
